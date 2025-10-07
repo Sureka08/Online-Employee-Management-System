@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         id="WebApp_ID"
+         version="5.0">
+
+    <display-name>OnlineEmployeeManagementSystem</display-name>
+
+    <!-- ✅ Welcome page list -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+        <welcome-file>signup.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>Controller.SignupController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/signupc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Controller.LoginController </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ForgotPasswordController</servlet-name>
+        <servlet-class>Controller.ForgotPasswordController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgotPasswordController</servlet-name>
+        <url-pattern>/ForgotPasswordController</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ResetPasswordController</servlet-name>
+        <servlet-class>Controller.ResetPasswordController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResetPasswordController</servlet-name>
+        <url-pattern>/ResetPasswordController</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>addempServlet</servlet-name>
+        <servlet-class>Controller.AddEmpController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addempServlet</servlet-name>
+        <url-pattern>/addempc</url-pattern>
+    </servlet-mapping>
+    
+   <servlet>
+    <servlet-name>viewempServlet</servlet-name>
+    <servlet-class>Controller.ViewEmpController</servlet-class>
+   </servlet>
+<servlet-mapping>
+    <servlet-name>viewempServlet</servlet-name>
+    <url-pattern>/viewemp</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>deleteempServlet</servlet-name>
+    <servlet-class>Controller.DeleteEmpController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>deleteempServlet</servlet-name>
+    <url-pattern>/deleteempC</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>EditEmpservlet</servlet-name>
+        <servlet-class>Controller.EditEmpController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditEmpservlet</servlet-name>
+        <url-pattern>/editemp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Updateservlet</servlet-name>
+        <servlet-class>Controller.UpdateEmpController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Updateservlet</servlet-name>
+        <url-pattern>/updateemp</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+    <servlet-name>viewLeaveservlet</servlet-name>
+    <servlet-class>Controller.ViewLeaveController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>viewLeaveservlet</servlet-name>
+    <url-pattern>/viewleave</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>contactservlet</servlet-name>
+    <servlet-class>Controller.ContactController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>contactservlet</servlet-name>
+    <url-pattern>/contactC</url-pattern>
+</servlet-mapping>
+
+ 
+    
+    <servlet>
+    <servlet-name>ChangePasswordController</servlet-name>
+    <servlet-class>Controller.ChangePasswordController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ChangePasswordController</servlet-name>
+    <url-pattern>/ChangePasswordController</url-pattern>
+</servlet-mapping>
+    
+    <servlet>
+    <servlet-name>ViewAccountController</servlet-name>
+    <servlet-class>Controller.ViewAccountController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ViewAccountController</servlet-name>
+    <url-pattern>/ViewAccountController</url-pattern>
+</servlet-mapping>
+     
+<servlet>
+        <servlet-name>LeaveApplyController</servlet-name>
+        <servlet-class>Controller.LeaveController</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LeaveApplyController</servlet-name>
+        <url-pattern>/LeaveApplyController</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>LeaveUpdateController</servlet-name>
+        <servlet-class>Controller.UpdateLeaveController</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LeaveUpdateController</servlet-name>
+        <url-pattern>/UpdateLeaveController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>DeleteLeaveController</servlet-name>
+    <servlet-class>Controller.DeleteLeaveController</servlet-class>
+    <load-on-startup>3</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteLeaveController</servlet-name>
+    <url-pattern>/DeleteLeaveController</url-pattern>
+</servlet-mapping>
+    
+    
+</web-app>
